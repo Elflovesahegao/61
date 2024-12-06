@@ -28,7 +28,7 @@ public:
 
     void displayInfo() const {
         cout << "Бренд: " << brand << ", Модель: " << model 
-             << ", Цена: " << price << ", Цвет: " << color << endl;
+             << ", Цена: " << price << ", Тип: " << color << endl;
     }
 };
 

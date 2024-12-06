@@ -21,14 +21,14 @@ int main() {
     int phoneCount = 0;
 
     // Создание 8 готовых объектов
-    phones[phoneCount++] = new LandlinePhone("Panasonic", "KX-TG9321", 5000, "Черный");
-    phones[phoneCount++] = new MobilePhone("Samsung", "Galaxy S21", 70000, "Синий");
-    phones[phoneCount++] = new LandlinePhone("Philips", "CD150", 3000, "Белый");
-    phones[phoneCount++] = new MobilePhone("Apple", "iPhone 13", 90000, "Черный");
-    phones[phoneCount++] = new LandlinePhone("Siemens", "Gigaset C530", 4000, "Красный");
-    phones[phoneCount++] = new MobilePhone("Xiaomi", "Mi 11", 60000, "Зеленый");
-    phones[phoneCount++] = new LandlinePhone("Motorola", "C1001", 2500, "Серый");
-    phones[phoneCount++] = new MobilePhone("Nokia", "3310", 3500, "Желтый");
+    phones[phoneCount++] = new LandlinePhone("Panasonic", "KX-TG9321", 5000, "Домашний");
+    phones[phoneCount++] = new MobilePhone("Samsung", "Galaxy S21", 70000, "Мобильный");
+    phones[phoneCount++] = new LandlinePhone("Philips", "CD150", 3000, "Домашний");
+    phones[phoneCount++] = new MobilePhone("Apple", "iPhone 13", 90000, "Мобильный");
+    phones[phoneCount++] = new LandlinePhone("Siemens", "Gigaset C530", 4000, "Домашний");
+    phones[phoneCount++] = new MobilePhone("Xiaomi", "Mi 11", 60000, "Мобильный");
+    phones[phoneCount++] = new LandlinePhone("Motorola", "C1001", 2500, "Домашний");
+    phones[phoneCount++] = new MobilePhone("Nokia", "3310", 3500, "Мобильный");
 
     int choice;
     while (true) {
@@ -62,7 +62,7 @@ int main() {
                 cin >> model;
                 cout << "Введите новую цену: ";
                 cin >> price;
-                cout << "Введите новый цвет: ";
+                cout << "Введите новый тип: ";
                 cin >> color;
 
                 phones[index]->setBrand(brand);
@@ -97,7 +97,7 @@ int main() {
                 cin >> model;
                 cout << "Введите цену: ";
                 cin >> price;
-                cout << "Введите цвет: ";
+                cout << "Введите тип: ";
                 cin >> color;
 
                 if (type == 1) {
